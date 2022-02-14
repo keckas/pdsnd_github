@@ -2,6 +2,7 @@ import time
 import pandas as pd
 import numpy as np
 
+# List of data files
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
@@ -81,6 +82,8 @@ INPUT_KEYWORDS_WEEKDAYS = { 'monday': 1,
                             'all': 99,
                             '-': 99,
                             '': 99 }
+
+# List of months and weekdays in text form
 OUTPUT_KEYWORDS_MONTHS = ['', 'january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december']
 OUTPUT_KEYWORDS_WEEKDAYS = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
 
