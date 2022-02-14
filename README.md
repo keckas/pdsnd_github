@@ -12,7 +12,13 @@ Several statistics are shown to user and user can save filtered data to CSV file
 This Project is part of Udacity course "Programming for Data Science".
 
 ### Files used
-Include the files used
+#### Application files:
+bikeshare.py
+#### Data files for individual cities:
+chicago.csv
+new_york_city.csv
+washington.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+BikeShare created by Petr Sedlacek, 2022
+Inspired by Udacity course "Programming for Data Science".
