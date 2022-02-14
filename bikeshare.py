@@ -120,7 +120,11 @@ def get_filters():
             # look up inputed value in a dictionary of known keywords
             if keyword in INPUT_KEYWORDS_MONTHS:
                 month = INPUT_KEYWORDS_MONTHS[keyword]
-                break
+                # Check whether month between January and June (otherwise data not available), 99 means "all"
+                if (month <= 6 or month == 99):
+                    break
+                else:
+                    print("Data for given month \"{}\" not available. Choose month between January and June.".format(OUTPUT_KEYWORDS_MONTHS[month]))
             else:
                 print("Unknown month \"{}\".".format(keyword))
 
