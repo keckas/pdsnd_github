@@ -8,7 +8,9 @@ BikeShare
 
 ### Description
 Application analyse data from bike sharing platform recorded in first half of 2017. Application gives several option how to analyze data - select one of three cities (New York, Chicago and Washington) and filter by months or day of the week.
+
 Several statistics are shown to user and user can save filtered data to CSV file for further processing.
+
 This Project is part of Udacity course "Programming for Data Science".
 
 ### Files used
@@ -21,4 +23,5 @@ This Project is part of Udacity course "Programming for Data Science".
 
 ### Credits
 BikeShare created by Petr Sedlacek, 2022
+
 Inspired by Udacity course "Programming for Data Science".
