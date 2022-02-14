@@ -4,6 +4,7 @@ import time
 import pandas as pd
 import numpy as np
 
+# List of data files
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
@@ -83,6 +84,8 @@ INPUT_KEYWORDS_WEEKDAYS = { 'monday': 1,
                             'all': 99,
                             '-': 99,
                             '': 99 }
+
+# List of months and weekdays in text form
 OUTPUT_KEYWORDS_MONTHS = ['', 'january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december']
 OUTPUT_KEYWORDS_WEEKDAYS = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
 
@@ -119,7 +122,11 @@ def get_filters():
             # look up inputed value in a dictionary of known keywords
             if keyword in INPUT_KEYWORDS_MONTHS:
                 month = INPUT_KEYWORDS_MONTHS[keyword]
-                break
+                # Check whether month between January and June (otherwise data not available), 99 means "all"
+                if (month <= 6 or month == 99):
+                    break
+                else:
+                    print("Data for given month \"{}\" not available. Choose month between January and June.".format(OUTPUT_KEYWORDS_MONTHS[month]))
             else:
                 print("Unknown month \"{}\".".format(keyword))
 
