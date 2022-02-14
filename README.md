@@ -1,7 +1,7 @@
 >**Note**: Please **fork** the current Udacity repository so that you will have a **remote** repository in **your** Github account. Clone the remote repository to your local machine. Later, as a part of the project "Post your Work on Github", you will push your proposed changes to the remote repository in your Github account.
 
 ### Date created
-This BikeShare project has been created on February 10, 2022.
+This **BikeShare project** has been created on February 10, 2022.
 
 ### Project Title
 BikeShare
@@ -13,11 +13,11 @@ This Project is part of Udacity course "Programming for Data Science".
 
 ### Files used
 #### Application files:
-bikeshare.py
+- bikeshare.py
 #### Data files for individual cities:
-chicago.csv
-new_york_city.csv
-washington.csv
+- chicago.csv
+- new_york_city.csv
+- washington.csv
 
 ### Credits
 BikeShare created by Petr Sedlacek, 2022
