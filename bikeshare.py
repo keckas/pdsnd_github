@@ -1,3 +1,5 @@
+# Project BikeShare, created on February 10, 2022
+
 import time
 import pandas as pd
 import numpy as np
